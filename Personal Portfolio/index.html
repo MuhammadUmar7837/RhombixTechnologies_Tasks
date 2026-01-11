@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Muhammad Umar | Premium Portfolio</title>
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts: Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://esm.sh/react@^19.2.3",
+          "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+          "react/": "https://esm.sh/react@^19.2.3/",
+          "framer-motion": "https://esm.sh/framer-motion@^12.24.10"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+      <div class="nav-container">
+        <a href="#home" class="logo"><span>Muhammad Umar</span></a>
+        <ul class="nav-links">
+          <li><a href="#home" class="nav-item active">Home</a></li>
+          <li><a href="#about" class="nav-item">About</a></li>
+          <li><a href="#skills" class="nav-item">Skills</a></li>
+          <li><a href="#education" class="nav-item">Education</a></li>
+          <li><a href="#projects" class="nav-item">Projects</a></li>
+          <li><a href="#contact" class="nav-item">Contact</a></li>
+        </ul>
+        <div class="nav-cta">
+          <a href="https://wa.me/923095407837" class="btn-primary">Hire Me</a>
+        </div>
+        <div class="menu-toggle" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero-section">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+          <div class="hero-content">
+            <span class="badge reveal">Available for Work</span>
+            <h1 class="reveal" id="typed1">
+              Expertise in <span>Modern Web</span> Development
+            </h1>
+
+            <!-- <p class="reveal">
+              I am <strong>Muhammad Umar</strong>, a Full-Stack developer
+              crafting high-performance, accessible websites and interactive web
+              experiences with precision and passion.
+            </p> -->
+
+            <!-- Typed.js output -->
+            <p class="reveal"><span id="typed"></span></p>
+
+            <div class="hero-actions reveal">
+              <a href="#projects" class="btn-primary">View Projects</a>
+              <a href="#contact" class="btn-outline">Let's Talk</a>
+            </div>
+            <div class="scene"></div>
+          </div>
+
+          <!-- Hero Cube Right -->
+          <div class="hero-cube">
+            <div class="cube">
+              <div class="face front">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML Logo"
+                />
+              </div>
+              <div class="face back">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  alt="CSS Logo"
+                />
+              </div>
+              <div class="face right">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JS Logo"
+                />
+              </div>
+              <div class="face left">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
+                  alt="PHP Logo"
+                />
+              </div>
+              <div class="face top">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-original.svg"
+                  alt="Laravel Logo"
+                />
+              </div>
+              <div class="face bottom">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  alt="React Logo"
+                />
+              </div>
+            </div>
+            <div class="shadow"></div>
+          </div>
+        </div>
+
+        <div class="scroll-indicator">
+          <div class="mouse">
+            <div class="wheel"></div>
+          </div>
+        </div>
+
+        <div class="hero-bg-image">
+          <img
+            src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=2070&auto=format&fit=crop"
+            alt="Tech Background"
+          />
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section-full">
+        <div class="container">
+          <div class="section-grid">
+            <div class="section-visual reveal">
+              <div class="image-wrapper">
+                <img src="images/Umar.jpeg" alt="Umar" />
+                <div class="image-accent"></div>
+              </div>
+            </div>
+            <div class="section-text reveal">
+              <h2 class="section-title">About <span>Me</span></h2>
+              <p class="lead">
+                Building digital products that make a difference.
+              </p>
+              <p>
+                With a strong foundation in Computer Science and years of
+                hands-on experience, I bridge the gap between complex backend
+                logic and pixel-perfect frontend design. I specialize in the
+                MERN stack and Laravel, ensuring scalability and performance in
+                every line of code.
+              </p>
+              <div class="about-info-grid">
+                <div class="info-item">
+                  <h3>1+</h3>
+                  <p>Years Exp.</p>
+                </div>
+                <div class="info-item">
+                  <h3>2+</h3>
+                  <p>Projects Done</p>
+                </div>
+              </div>
+              <a href="#contact" class="btn-text"
+                >Read more about my journey <i class="fas fa-arrow-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="section-full bg-alt">
+        <div class="container">
+          <div class="text-center mb-60">
+            <h2 class="section-title reveal">
+              My <span>Technical</span> Toolkit
+            </h2>
+            <p class="section-desc reveal">
+              Harnessing the power of the latest technologies to deliver
+              cutting-edge results.
+            </p>
+          </div>
+          <div class="skills-grid">
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fab fa-react"></i></div>
+              <h3>Frontend</h3>
+              <p>
+                React.js, Next.js, HTML5, CSS3, Tailwind CSS, JavaScript (ES6+)
+              </p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-server"></i></div>
+              <h3>Backend</h3>
+              <p>Node.js, PHP, Laravel, Express.js, REST APIs</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-database"></i></div>
+              <h3>Database</h3>
+              <p>MySQL, MongoDB, PostgreSQL, Firebase</p>
+            </div>
+            <div class="skill-card reveal">
+              <div class="skill-icon"><i class="fas fa-tools"></i></div>
+              <h3>DevTools</h3>
+              <p>Git, Docker, VS Code, Figma, Postman</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education Section -->
+      <section id="education" class="section-full">
+        <div class="container">
+          <h2 class="section-title text-center reveal">
+            Education <span>Path</span>
+          </h2>
+          <div class="timeline">
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="date">2021 - 2025</span>
+                <h3>BS Computer Science</h3>
+                <h4>Virtual University of Pakistan</h4>
+                <p>main Focused On Web-Development in Full-Stack</p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="date">2023</span>
+                <h3>Full Stack Development Diploma</h3>
+                <h4>NAVTTC Institute</h4>
+                <p>
+                  Intensive certification focused on JavaScript ecosystem and
+                  database management.
+                </p>
+              </div>
+            </div>
+            <div class="timeline-item reveal">
+              <div class="timeline-dot"></div>
+              <div class="timeline-content">
+                <span class="date">2019 - 2021</span>
+                <h3>Intermediate (ICS)</h3>
+                <h4>Islamia College Railway Road, Lahore</h4>
+                <p>
+                  Mathematics, Physic's, and Fundamentals of Computer Science.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <span class="date">2018 - 2019</span>
+              <h3>MATRIC (CS)</h3>
+              <h4>Trust Model Public High School , Lahore</h4>
+              <p>
+                Mathematics, physic's , and Fundamentals of Computer Science.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section-full bg-alt">
+        <div class="container">
+          <div class="text-center mb-60">
+            <h2 class="section-title reveal">Featured <span>Work</span></h2>
+            <p class="section-desc reveal">
+              Each project represents a unique challenge solved with code.
+            </p>
+          </div>
+          <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card reveal">
+              <div class="project-image">
+                <img src="images/image.png" alt="E-commerce Project" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/MuhammadUmar7837/Face-Recognization-Model.git"
+                      class="icon-btn"
+                      title="View Code"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://muhammadumar7837.github.io/Face-Recognization-Model/"
+                      class="icon-btn"
+                      title="Live Demo"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Face Recognization System In Real Time Detection</h3>
+                <p>
+                  Detection of faces in real time and scan the faces that cn be
+                  used in any organization and in organization for the
+                  management of attentende etc
+                </p>
+                <div class="project-tags">
+                  <span>PYTHON</span>
+                  <span>MySQL Lite</span>
+                  <span>Django</span>
+                  <span>Javascript</span>
+                  <span>HTML</span>
+                  <span>Css</span>
+                </div>
+              </div>
+              <div class="project-info">
+                <div class="project-tags"></div>
+              </div>
+            </div>
+            <!-- Project 2 -->
+            <div class="project-card reveal">
+              <div class="project-image">
+                <img src="images/OrangeLogo.jfif" alt="CRM Dashboard" />
+                <div class="project-overlay">
+                  <div class="project-links">
+                    <a
+                      href="https://github.com/MuhammadUmar7837/Food_Corner.git"
+                      class="icon-btn"
+                      title="View Code"
+                      ><i class="fab fa-github"></i
+                    ></a>
+                    <a
+                      href="https://muhammadumar7837.github.io/Food_Corner/"
+                      class="icon-btn"
+                      title="Live Demo"
+                      ><i class="fas fa-external-link-alt"></i
+                    ></a>
+                  </div>
+                </div>
+              </div>
+              <div class="project-info">
+                <h3>Food Corner Website</h3>
+                <p>
+                  This is A Food Ordering Website Through Which you can Order
+                  Different categories of food at Any Time
+                </p>
+                <div class="project-tags">
+                  <span>HTML</span>
+                  <span>MySQL </span>
+                  <span>PHP</span>
+                  <span>CSS</span>
+                  <span>Javascript</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section-full">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-details reveal">
+              <h2 class="section-title">Get In <span>Touch</span></h2>
+              <p>
+                I'm currently available for freelance projects and full-time
+                opportunities. Let's discuss your next big idea.
+              </p>
+
+              <div class="contact-links">
+                <a href="mailto:umarrajput7837@gmail.com" class="contact-item">
+                  <div class="contact-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div>
+                    <span>Email Me</span>
+                    <p>umarrajput7837@gmail.com</p>
+                  </div>
+                </a>
+                <a
+                  href="https://wa.me/923095407837"
+                  target="_blank"
+                  class="contact-item"
+                >
+                  <div class="contact-icon">
+                    <i class="fab fa-whatsapp"></i>
+                  </div>
+                  <div>
+                    <span>WhatsApp</span>
+                    <p>+92 309 5407837</p>
+                  </div>
+                </a>
+                <a
+                  href="https://linkedin.com/in/muhammad-umar-a17545357"
+                  target="_blank"
+                  class="contact-item"
+                >
+                  <div class="contact-icon">
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                  <div>
+                    <span>LinkedIn</span>
+                    <p>Muhammad Umar</p>
+                  </div>
+                </a>
+                <a
+                  href="https://github.com"
+                  target="_blank"
+                  class="contact-item"
+                >
+                  <div class="contact-icon"><i class="fab fa-github"></i></div>
+                  <div>
+                    <span>GitHub</span>
+                    <p>Project Repositories</p>
+                  </div>
+                </a>
+              </div>
+            </div>
+
+            <div class="contact-form-card reveal">
+              <h3>Send a Query To my Email</h3>
+              <form
+                id="contact-form"
+                action="https://formspree.io/f/xreezqkk"
+                method="POST"
+              >
+                <div class="input-group">
+                  <input type="text" id="name" name="name" required />
+                  <label>Your Name</label>
+                </div>
+                <div class="input-group">
+                  <input type="email" id="email" name="email" required />
+                  <label>Your Email</label>
+                </div>
+                <div class="input-group">
+                  <textarea
+                    id="message"
+                    name="message"
+                    rows="4"
+                    required
+                  ></textarea>
+                  <label>How can I help?</label>
+                </div>
+                <button type="submit" class="btn-primary w-full">
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div id="form-popup" style="display: none">
+          <p>✅ Message sent successfully!</p>
+          <button onclick="this.parentElement.style.display='none'">
+            Close
+          </button>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-container">
+        <div class="logo"><span>Muhammad Umar</span></div>
+        <p>&copy; 2026 Muhammad Umar. All Righs Reserved.</p>
+        <div class="social-footer">
+          <a href="https://www.facebook.com/inoxent.rajput.142687"
+            ><i class="fab fa-facebook-f"></i
+          ></a>
+          <a href="https://x.com/MuhammadUm7837"
+            ><i class="fab fa-twitter"></i
+          ></a>
+          <a href="https://www.instagram.com/umar_rajput67"
+            ><i class="fab fa-instagram"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script>
+      const typed = new Typed("#typed", {
+        strings: [
+          "I am <strong>Muhammad Umar</strong>, A Full-Stack developer crafting high-performance, accessible websites and interactive web experiences with precision and passion.",
+          "I love building <strong>modern web applications</strong>.",
+          "Always learning. Always coding.",
+        ],
+        typeSpeed: 40,
+        backSpeed: 20,
+        smartBackspace: true,
+        loop: true,
+      });
+    </script>
+  </body>
+</html>
